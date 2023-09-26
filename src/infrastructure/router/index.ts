@@ -19,6 +19,7 @@ function loadRouter(file: string): void {
     import(`./${file}`).then((routerModule) => {
       console.log("cargado", name);
       router.use(`/${name}`, routerModule.router);
+      console.log("mensage")
     });
   }
 }
